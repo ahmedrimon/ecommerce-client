@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../Card/Card';
 
 const Home = () => {
     return (
@@ -7,6 +8,11 @@ const Home = () => {
                 <input type="text" placeholder="Search Book" />
                 <button className="btn btn-success">Search</button>
             </div>
+            <br />
+            <Card></Card>
+
+
+
         </div>
     );
 };
