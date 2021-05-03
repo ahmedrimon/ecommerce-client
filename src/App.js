@@ -11,8 +11,14 @@ import Navbar from './components/Navbar/Navbar';
 import AddOrders from './components/AddOrders.js/AddOrders';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Checkout from './components/Checkout/Checkout';
 
-function App() {
+// export const UserContext = createContext();
+
+function App(props) {
+
+    // const [loggedInUser, setLoggedInUser] = useState({})
   return (
     <div >
       <Router>
@@ -30,6 +36,9 @@ function App() {
             </Route>
             <Route path="/signup">
               <SignUp/>
+            </Route>
+            <Route path="/checkout">
+              <Checkout/>
             </Route>
             
             <Route exact path="/">

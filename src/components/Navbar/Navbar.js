@@ -1,6 +1,14 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const Navbar = () => {
+
+    const history = useHistory();
+
+    const handleLogIn = () => {
+        history.push('/login');
+    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
@@ -27,7 +35,7 @@ const Navbar = () => {
                         </li>
 
                         <li className="nav-item me-5">
-                            <a className="nav-link active" aria-current="page" href="/"><button className="btn btn-success">Login</button></a>
+                            <a className="nav-link active" aria-current="page" href="/"><button onClick={handleLogIn} className="btn btn-success" >Login</button></a>
                         </li>
 
                         

@@ -1,10 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const Card = () => {
 
-    // const handleSubmit = () => {
+    const history = useHistory();
 
-    // }
+    const handleLogIn = () => {
+        history.push('/login');
+    }
 
     return (
         <div>
@@ -19,7 +22,7 @@ const Card = () => {
                                         <img src="https://i.ibb.co/wsvhNm6/image-32.png" className="card-img-top" alt="..." height="200px"  />
                                         <div className="card-body">
                                             <p className="card-text">Marks full cream milk powder</p>
-                                            <button className="btn btn-success" >Buy Now</button>
+                                            <button onClick={handleLogIn} className="btn btn-success" >Buy Now</button>
                                         </div>
                                     </div>
 

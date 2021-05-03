@@ -11,23 +11,19 @@ const SignUp = () => {
                         <form>
 
                             <div className="form-group">
-                                <label for="name"> Name </label>
-                                <input type="name" name="name" className="form-control"/>
+                                <input type="name" name="name" placeholder="Name" className="form-control"/>
                             </div>
 
                             <div className="form-group">
-                                <label for="email"> username or email</label>
-                                <input type="email name" name="username or email" className="form-control"/>
+                                <input type="email name" name="username or email" placeholder="Username or Email" className="form-control"/>
                             </div>
 
                             <div className="form-group">
-                                <label for="password"> Password </label>
-                                <input type="password" name="password" className="form-control"/>
+                                <input type="password" name="password" placeholder="Password" className="form-control"/>
                             </div>
 
-                            <div className="form-group">
-                                <label for="password"> Confirm Password </label>
-                                <input type="password" name="password" className="form-control"/>
+                            <div className="form-group">   
+                                <input type="password" name="password" placeholder="Confirm Password" className="form-control"/>
                             </div>
                             {/* checkbox */}
                             <div className="form-group from-check">
@@ -35,7 +31,14 @@ const SignUp = () => {
                                 <label className="form-check-label" for="checkbox">Remember Me</label>
                             </div>
                             <button className="btn btn-success">Create an account</button>
+                            <br/><br/>
+                            <p>Already have an account?&nbsp;<a href="#">Login</a></p>
                         </form>
+                        or <br/>
+                        <button className="btn btn-outline-primary">Continue with Google</button>
+                        <br/>
+                        <br/>
+                        <button className="btn btn-outline-primary">Continue with Facebook</button>
                     </div>
                 </div>
             </div>
